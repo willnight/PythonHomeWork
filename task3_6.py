@@ -4,7 +4,7 @@
 def int_func(text):
     res = list()
     for i in list(text):
-        if 37 <= ord(i) <= 122:
+        if 97 <= ord(i) <= 122:
             res.append(i)
     return "".join(res).title()
 
@@ -26,7 +26,7 @@ print('-' * 20)
 
 def int_func_(text):
     for i in list(text):
-        if not (37 <= ord(i) <= 122):
+        if not (97 <= ord(i) <= 122):
             return
     return text.title()
 
